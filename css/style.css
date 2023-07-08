@@ -2,6 +2,36 @@ body {
   padding: 50px 10%;
 }
 
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float: right;
+}
+
 .ingredient-list {
-  background: url("../assets/list-bg.png") no-repeat;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 30px 60px;
+  background: url("../assets/list-bg.png") repeat;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  overflow: auto;
+}
+
+li.ingredient-item {
+  list-style: outside "\2610";
+  padding-left: 20px;
+}
+
+li.left {
+  float: left;
+}
+
+li.right {
+  float: right;
+}
+
+li.checked {
+  list-style-type: "\2611";
 }
