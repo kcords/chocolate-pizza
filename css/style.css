@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 :root {
   --light-text: #ABA6AC;
+  --standard-text: #182129;
   --transparent: rgba(0, 0, 0, 0)
 }
 
@@ -34,24 +40,50 @@ header {
 }
 
 .social-btn {
-  margin: 1px;
+  margin: .1px;
   padding: 0;
+}
+
+#brand-name {
+  margin: 0;
+  max-height: 30px;
+  font-size: 1.75rem;
+  font-family: 'Yellowtail', cursive;
+  white-space: nowrap;
+  color: black;
+}
+
+#brand-tagline {
+  margin: 0;
+  max-height: 15px;
+  font-size: .9rem;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  white-space: nowrap;
 }
 
 .banner {
   margin-bottom: 25px;
-  overflow: auto;
   float: clear;
   min-height: max-content;
 }
 
 h1 {
-  font-size: 2.5rem;
   font-weight: 700;
+  font-size: 2.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--standard-text)
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  color: var(--light-text)
 }
 
 .print-btn {
-  color: var(--light-text)
+  margin-top: 55%;
+  color: var(--light-text);
+  font-family: 'Nunito', sans-serif;
 }
 
 .print-btn img {
@@ -59,14 +91,16 @@ h1 {
 }
 
 #featured-img {
+  margin-top: 20px;
   width: 100%;
   object-fit: contain;
 }
 
-p {
+main p {
   margin: 20px auto;
   text-indent: 30px;
   line-height: 1.5rem;
+  color: var(--standard-text)
 }
 
 .ingredient-list {
@@ -78,20 +112,33 @@ p {
   overflow: auto;
 }
 
-li.left {
-  float: left;
-}
-
-li.right {
-  float: right;
+.ingredient-list ul {
+  max-width: 50%;
 }
 
 li.ingredient-item {
+  padding-left: 15px;
   list-style: outside "\2610";
-  padding-left: 20px;
+  font-size: 1.25rem;
+  font-family: 'Baloo 2', cursive;
+  color: var(--standard-text);
+  line-height: 1.75rem;
+  white-space: wrap;
+}
+
+li.ingredient-item::marker {
+  color: var(--light-text);
 }
 
 li.checked {
   list-style-type: "\2611";
   text-decoration: line-through;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 10px solid var(--light-text);
+  min-height: max-content;
+  overflow: auto;
 }
