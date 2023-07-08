@@ -1,0 +1,7 @@
+body {
+  padding: 50px 10%;
+}
+
+.ingredient-list {
+  background: url("../assets/list-bg.png") no-repeat;
+}
